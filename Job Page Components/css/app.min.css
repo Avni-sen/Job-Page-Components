@@ -1,0 +1,262 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Mulish", sans-serif;
+}
+*:focus {
+  outline: none;
+}
+
+:root {
+  --color:#111127;
+}
+
+body {
+  background: #E7EAFB;
+  padding: 50px;
+}
+
+.component--job-item {
+  background: #fff;
+  box-shadow: 0 21px 87px -38px rgba(80, 98, 211, 0.5);
+  border-radius: 20px;
+  width: 606px;
+  padding: 50px 50px 40px;
+  display: flex;
+  flex-direction: column;
+}
+.component--job-item .title {
+  color: var(--color);
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.component--job-item .title a {
+  color: var(--color);
+}
+.component--job-item .alt-title {
+  font-size: 16px;
+  font-weight: normal;
+  opacity: 70%;
+  color: var(--color);
+  margin-bottom: 24px;
+}
+.component--job-item p {
+  color: var(--color);
+  font-size: 18px;
+  height: 52px;
+  width: 504px;
+  line-height: 26px;
+  margin-bottom: 25px;
+}
+.component--job-item .tags {
+  display: flex;
+  flex-wrap: wrap;
+}
+.component--job-item .tags > a {
+  margin: 0 10px 10px 0;
+  background: #E7EAFB;
+  border-radius: 30px;
+  color: var(--color);
+  font-size: 14px;
+  padding: 7px 20px;
+}
+.component--job-item .tags > a:hover {
+  background: black;
+  color: #fff;
+}
+.component--job-items {
+  display: flex;
+  flex-direction: column;
+}
+.component--job-items li {
+  margin-bottom: 15px;
+}
+.component--job-items li a {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 10px;
+  height: 104px;
+  padding: 20px 45px 20px 20px;
+  transition: 300ms transform;
+}
+.component--job-items li a:hover {
+  transform: scale(1.05);
+}
+.component--job-items li a .avatar {
+  height: 64px;
+  width: 64px;
+  border-radius: 64px;
+  border: 2px solid #E7EAFB;
+  color: var(--color2);
+  font-size: 30px;
+  font-weight: bold;
+  align-items: center;
+  display: grid;
+  place-items: center;
+}
+.component--job-items li a .details {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+}
+.component--job-items li a .details .title {
+  color: var(--color);
+  font-size: 20px;
+  font-weight: bold;
+}
+.component--job-items li a .details .position {
+  font-size: 16px;
+  color: rgba(17, 17, 39, 0.7);
+  margin-top: 9px;
+}
+.component--job-items li a .location {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  font-size: 16px;
+  color: var(--color);
+  opacity: 60%;
+}
+.component--job-items li a .location img {
+  margin-right: 5px;
+  font-size: 10px;
+}
+.component--job-filter {
+  width: 300px;
+  background: #fff;
+  border-radius: 25px;
+  padding: 30px;
+}
+.component--job-filter form .search {
+  height: 76px;
+  margin: 0 -30px;
+  padding: 0 30px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #E7EAFB;
+}
+.component--job-filter form .search input {
+  height: 46px;
+  line-height: 106px;
+  background: transparent url(../img/SearchGroup.svg) no-repeat 8px;
+  font-size: 16px;
+  padding-left: 45px;
+  color: var(--color);
+}
+.component--job-filter form .search input::placeholder {
+  color: rgba(17, 17, 39, 0.7);
+}
+.component--job-filter form .search img {
+  margin-right: 7px;
+  position: absolute;
+  font-size: 10px;
+}
+.component--job-filter form h6 {
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  color: var(--color);
+}
+.component--job-filter form .checkbox-list {
+  padding-bottom: 40px;
+}
+.component--job-filter form .checkbox-list li {
+  margin-bottom: 20px;
+}
+.component--job-filter form .checkbox-list li:last-child {
+  margin-bottom: 0;
+}
+.component--job-filter form .checkbox-list li label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.component--job-filter form .checkbox-list li label .checkbox {
+  width: 27px;
+  height: 27px;
+  border-radius: 5px;
+  border: 1px solid #E7EAFB;
+  background: #fff url(../img/TickGroup.svg) no-repeat center;
+  min-width: 27px;
+  margin-right: 15px;
+  transition: 300ms all;
+}
+.component--job-filter form .checkbox-list li label .text {
+  font-size: 16px;
+  color: var(--color);
+}
+.component--job-filter form .checkbox-list li label input {
+  display: none;
+}
+.component--job-filter form .checkbox-list li label input:checked + .checkbox {
+  background-color: #5062D3;
+}
+.component--job-filter form .filter-form li {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.component--job-filter form .filter-form li label {
+  display: block;
+  font-size: 12px;
+  font-weight: bold;
+  color: var(--color);
+  margin-bottom: 10px;
+}
+.component--job-filter form .filter-form li select {
+  background: transparent url(../img/down-arrow-Group.svg) no-repeat calc(100% - 15px);
+  appearance: none;
+  border: 2px solid #E7EAFB;
+  height: 46px;
+  border-radius: 8px;
+  padding: 0 40px 0 20px;
+  text-overflow: ellipsis;
+  color: var(--color);
+  font-size: 16px;
+  transition: 300ms border-color;
+  cursor: pointer;
+}
+.component--job-filter form .filter-form li select:hover, .component--job-filter form .filter-form li select:focus {
+  border-color: #6778E1;
+}
+.component--job-filter form .filter-form li button {
+  background-color: #8A9CFF;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  height: 57px;
+  width: 100%;
+  box-shadow: 0 11px 30px -15px #6778E1;
+  cursor: pointer;
+  transition: 300ms transform;
+}
+.component--job-filter form .filter-form li button:hover {
+  transform: scale(1.01);
+}
+.component--job-button {
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  height: 71px;
+  background-color: #fff;
+  padding: 0 35px 0 45px;
+  font-size: 18px;
+  box-shadow: 0 11px 30 -15px rgba(103, 120, 225, 0.54);
+  transition: 300ms transform;
+}
+.component--job-button img {
+  margin-left: 25px;
+  color: var(--color);
+}
+.component--job-button:hover {
+  transform: scale(1.01);
+}
+
+/*# sourceMappingURL=app.min.css.map */
